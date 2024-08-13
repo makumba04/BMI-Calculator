@@ -2,11 +2,28 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
 </head>
 
 <body>
-    
+    <header>
+        <h1>BMI Calcultor</h1>
+    </header>
+    <main>
+        <section class="input">
+            <input type="text" id="INPUT_WEIGHT">
+            <input type="text" id="INPUT_HEIGHT">
+            <input type="submit" value="Calculate" onclick="BMI_IMPERIAL()">
+        </section>
+        <section id="result">
+
+        </section>
+    </main>
+    <footer>
+        BMI Calculator by Pablo Cabello - All rights reserved
+    </footer>
 </body>
 </html>
