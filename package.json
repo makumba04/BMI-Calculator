@@ -1,0 +1,14 @@
+{
+  "name": "bmi_calculator",
+  "version": "1.0.0",
+  "description": "Simple app to calculate BMI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pablo Cabello Ruz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
