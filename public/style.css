@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Roboto;
+    src: url('./Roboto-Regular.ttf');
+}
+
+body {
+    font-family: Roboto;
+}
+
+header {
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid grey;
+    border-left: 16px solid white;
+    border-right: 16px solid white;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.input {
+    height: 250px;
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 21px 21px 21px 21px;
+    -webkit-border-radius: 21px 21px 21px 21px;
+    -moz-border-radius: 21px 21px 21px 21px;
+    border: 1px solid grey;
+}
+
+.input input {
+    width: 25em;
+    margin: 10px;
+}
+
+#CALCULATE_BTN {
+    width: 10em;
+}
+
+#RESULT {
+    width: 30%;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 2px solid grey;
+    border-left: 16px solid white;
+    border-right: 16px solid white;
+}
+
+#IMPERIAL_SYSTEM {
+    display: none;
+}

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="main.js"></script>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
@@ -11,15 +12,20 @@
 <body>
     <header>
         <h1>BMI Calcultor</h1>
+        <nav><button id="CHANGE_UNITS_BTN" onclick="CHANGE_UNITS()">Imperial Units</button></nav>
     </header>
     <main>
-        <section class="input">
-            <input type="text" id="INPUT_WEIGHT">
-            <input type="text" id="INPUT_HEIGHT">
-            <input type="submit" value="Calculate" onclick="BMI_IMPERIAL()">
+        <section class="input" id="METRIC_SYSTEM">
+            <input type="text" id="INPUT_WEIGHT_METRIC" placeholder="Your weight in kg...">
+            <input type="text" id="INPUT_HEIGHT_METRIC" placeholder="Your height in m...">
+            <input type="submit" id="CALCULATE_BTN" value="Calculate" onclick="BMI_METRIC()">
+            <section id="RESULT_METRIC"></section>
         </section>
-        <section id="result">
-
+        <section class="input" id="IMPERIAL_SYSTEM">
+            <input type="text" id="INPUT_WEIGHT_IMPERIAL" placeholder="Your weight in lb...">
+            <input type="text" id="INPUT_HEIGHT_IMPERIAL" placeholder="Your height in inches...">
+            <input type="submit" id="CALCULATE_BTN" value="Calculate" onclick="BMI_IMPERIAL()">
+            <section id="RESULT_IMPERIAL"></section>
         </section>
     </main>
     <footer>
