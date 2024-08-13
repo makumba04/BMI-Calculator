@@ -1,3 +1,3 @@
-# BMI_Calculator
+# BMI-Calculator
 
  Simple app to calculate BMI
