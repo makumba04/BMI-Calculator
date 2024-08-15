@@ -5,13 +5,19 @@ function BMI_METRIC() {
     var result_container = document.getElementById('RESULT_METRIC');
     result_container.innerHTML = '';
 
-    if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+    if (isNaN(weight) || isNaN(height) ) {
 
         error_message = document.createElement('p');
         error_message.innerText = "Please enter your weight and height";
 
         result_container.appendChild(error_message);
-    } else {
+    } else if ( weight <= 44 || height <= 1.30 ){
+        
+        error_message = document.createElement('p');
+        error_message.innerText = "Please enter a valid number";
+        
+        result_container.appendChild(error_message);
+    }else {
 
         var BMI_VALUE = (weight / (height**2)).toFixed(2);
 
@@ -29,10 +35,16 @@ function BMI_IMPERIAL() {
     var result_container = document.getElementById('RESULT_IMPERIAL');
     result_container.innerHTML = '';
 
-    if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+    if ( isNaN(weight) || isNaN(height )) {
 
         error_message = document.createElement('p');
         error_message.innerText = "Please enter your weight and height";
+        
+        result_container.appendChild(error_message);
+    } else if ( weight <= 104 || height <= 58 ){
+
+        error_message = document.createElement('p');
+        error_message.innerText = "Please enter a valid number";
         
         result_container.appendChild(error_message);
     } else {
