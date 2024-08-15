@@ -45,11 +45,11 @@ h1 {
 
 #CALCULATE_BTN {
     width: 10em;
+    margin-bottom: 35px;
 }
 
 #RESULT {
     width: 30%;
-    margin-top: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
